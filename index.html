@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MLT SHOP</title>
+
+<!-- Google Font Kanit -->
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif;
+}
+
+/* ====== เมนูด้านบน ====== */
+nav {
+  width: 100%;
+  background: #f3c4fb;
+  padding: 14px;
+  padding-left: 70px; /* <<< เว้นที่ให้ปุ่มสามขีด */
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* ปุ่มเมนูทั่วไป */
+nav a {
+  text-decoration: none;
+  color: #4a148c;
+  border: 2px solid #e0aaff;
+  padding: 8px 16px;
+  border-radius: 14px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  background: #fde2e4;
+}
+
+nav a:hover {
+  background: #e0aaff;
+}
+
+/* ====== ปุ่มสามขีด ====== */
+.menu-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-icon a {
+  font-size: 22px;
+  line-height: 1;
+  padding: 6px 10px;
+  border-radius: 12px;
+  border: 2px solid #e0aaff;
+  background: #fde2e4;
+  color: #5a189a;
+  text-decoration: none;
+}
+
+/* ====== ส่วนกลาง ====== */
+header {
+  min-height: calc(100vh - 120px);
+  background: linear-gradient(to bottom right, #fde2e4, #f3c4fb);
+  padding: 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+header h1 {
+  font-size: 56px;
+  color: #5a189a;
+  letter-spacing: 4px;
+  margin-bottom: 16px;
+}
+
+header p {
+  font-size: 20px;
+  color: #6a1b9a;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+/* ปุ่มกลาง */
+.main-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-btns a {
+  text-decoration: none;
+  padding: 12px 26px;
+  border-radius: 20px;
+  background: #9d4edd;
+  color: white;
+  font-size: 18px;
+}
+
+.main-btns a:hover {
+  background: #7b2cbf;
+}
+
+/* ====== footer ====== */
+footer {
+  background: #5a189a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- เมนูบน -->
+<nav>
+  <!-- ปุ่มสามขีด -->
+  <div class="menu-icon">
+    <a href="about.html">☰</a>
+  </div>
+
+  <!-- เมนูหลัก -->
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="cart.html">Cart</a>
+  <a href="login.html">Login</a>
+  <a href="register.html">Register</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- เนื้อหากลาง -->
+<header>
+  <h1>MLT SHOP</h1>
+  <p>ความหอมแบบ Everday scent ในราคาสบายใจ</p>
+
+  <div class="main-btns">
+    <a href="shop.html">ไปหน้า Shop</a>
+    <a href="login.html">เข้าสู่ระบบ</a>
+    <a href="register.html">สมัครสมาชิก</a>
+  </div>
+</header>
+
+<!-- ส่วนล่าง -->
+<footer>
+  © 2026 MLT SHOP
+</footer>
+
+</body>
+</html>
